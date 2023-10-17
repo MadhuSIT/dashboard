@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <title>Mitsogo</title>
+</head>
+<body>
+    <div class="app-container">
+        <div class="dashboard">
+            <div class="logo-container">
+                <img class="logo" src="./images/logo.svg" alt="logo">
+            </div>
+            <ul class="dashboard-list">
+                <li class="dashboard-list-item">
+                    <img class="dashboard-icon" src="./images/icon_home.svg" alt="icons">
+                    <p class="dashboard-list-item-txt">Home</p>
+                </li>
+                <li class="dashboard-list-item item-selected">
+                    <img class="dashboard-icon" src="./images/icon_dashboard.svg" alt="icons">
+                    <p class="dashboard-list-item-txt">Dashboard</p>
+                </li>
+                <li class="dashboard-list-item">
+                    <img class="dashboard-icon" src="./images/icon_inbox.svg" alt="icons">
+                    <p class="dashboard-list-item-txt">Inbox</p>
+                </li>
+                <li class="dashboard-list-item">
+                    <img class="dashboard-icon" src="./images/icon_products.svg" alt="icons">
+                    <p class="dashboard-list-item-txt">Products</p>
+                </li>
+                <li class="dashboard-list-item">
+                    <img class="dashboard-icon" src="./images/icon_admin.svg" alt="icons">
+                    <p class="dashboard-list-item-txt">Admin</p>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="main-container" id="mainId">
+            <div class="header" id="headerId">
+                <div class="header-left-container">
+                    <button class="slide" id="slideId">
+                        <img class="menu-icon" src="./images/menu.png" alt="">
+                    </button>
+                    <div class="search-container">
+                        <img class="search-icon" src="./images/icon_search.svg" alt="">
+                        <input class="search-input" type="search" placeholder="Search transactions, invoices or help">
+                    </div>
+                </div>
+
+                <div class="header-right-container">
+                    
+                    <div class="dropdown">
+                        <button class="btn btn-secondary " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          
+                          <img class="" src="./images/notification.svg" alt="">
+                        </button>
+                        
+                        <ul class="dropdown-menu notification" aria-labelledby="dropdownMenuButton1">
+                          
+                          <div class="users-container w-auto m-0">
+                            <div class="d-flex align-items-center w-100 ">
+                                <img class="ms-1" src="./images/profile-pic.png" alt="" height="40px" width="40px">
+                                <div class="d-flex flex-column align-items-start pt-3 w-auto px-2">
+                                    <h4>Drew James</h4>
+                                    <div class="fw-lighter pe-1">
+                                        <p class="p-0">Assigned you with the call on sara</p>
+                                    </div>
+                                </div>
+                                <p>2 min ago</p>
+                            </div>
+                            
+                        </div>
+                        <div class="users-container w-auto m-0">
+                            <div class="d-flex align-items-center w-100 ">
+                                <img class="ms-1" src="./images/profile-pic.png" alt="" height="40px" width="40px">
+                                <div class="d-flex flex-column align-items-start pt-3 w-auto px-2">
+                                    <h4>Drew James</h4>
+                                    <div class="fw-lighter pe-1">
+                                        <p class="p-0">Assigned you with the call on sara</p>
+                                    </div>
+                                </div>
+                                <p>2 min ago</p>
+                            </div>
+                            
+                        </div>
+                        <div class="users-container w-auto m-0">
+                            <div class="d-flex align-items-center w-100 ">
+                                <img class="ms-1" src="./images/profile-pic.png" alt="" height="40px" width="40px">
+                                <div class="d-flex flex-column align-items-start pt-3 w-auto px-2">
+                                    <h4>Drew James</h4>
+                                    <div class="fw-lighter pe-1">
+                                        <p class="p-0">Assigned you with the call on sara</p>
+                                    </div>
+                                </div>
+                                <p>2 min ago</p>
+                            </div>
+                            
+                        </div>
+                         
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          John Doe
+                          <img class="profile-pic" src="./images/Avatar.png" alt="profile">
+                        </button>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">
+                            <img src="./images/icon-my-profile.svg" alt="">
+                            My Profile</a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <img src="./images/icon-billing.svg" alt="">
+                            Billing</a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <img src="./images/icon-logout.png" alt="">
+                            Logout</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="details-container p-5">
+                <!-- <div id="detailsInner">
+                    <div class="details-top-container">
+                        <h1>Overview</h1>
+                        <div class="add-funds-btn">
+                            <p class="add-txt">Add Funds</p>
+                            <img class="plus-icon" src="./images/plus.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="mobile-view-profile-details">
+                        <div class="profile-details">
+                            <div class="profile-main-details">
+                                <div class="details-profile-pic-container">
+                                    <img src="./images/profile.png" alt="">
+                                    <img class="edit-icon" src="./images/edit.svg" alt="edit-icon">
+                                </div>
+                                <h3 class="profile-name">Nick Herasimenka</h3>
+                                <p class="profile-country">United States</p>
+                                <div class="social-media-icons">
+                                    <img class="media-icon" src="./images/twitter.png" alt="twitter">
+                                    <img class="media-icon" src="./images/facebook.png" alt="facebook">
+                                    <img class="media-icon" src="./images/linkedin.png" alt="linkedin">
+                                    <img class="media-icon" src="./images/whatsapp.png" alt="whatsapp">
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <div class="users-top-container">
+                                    <h1 class="user-heading">Our Users</h1>
+                                    <img src="./images/options.svg" alt="">
+                                </div>
+
+                                <div class="users-container">
+                                    <div class="each-user">
+                                        <img class="user-pic" src="./images/profile-pic.png" alt="">
+                                        <div>
+                                            <h4 class="user-name">Drew James</h4>
+                                            <p class="user-country">United States</p>
+                                        </div>
+                                    </div>
+                                    <p class="user-number">Mobile: 8715674877</p>
+                                </div>
+
+                                <div class="users-container">
+                                    <div class="each-user">
+                                        <img class="user-pic" src="./images/profile-pic.png" alt="">
+                                        <div>
+                                            <h4 class="user-name">Drew James</h4>
+                                            <p class="user-country">United States</p>
+                                        </div>
+                                    </div>
+                                    <p class="user-number">Mobile: 8715674877</p>
+                                </div>
+
+                                <div class="users-container">
+                                    <div class="each-user">
+                                        <img class="user-pic" src="./images/profile-pic.png" alt="">
+                                        <div>
+                                            <h4 class="user-name">Drew James</h4>
+                                            <p class="user-country">United States</p>
+                                        </div>
+                                    </div>
+                                    <p class="user-number">Mobile: 8715674877</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-content">
+                        <div class="details-left-container">
+                            <div class="graph-details">
+                                <div class="stat-graph">
+                                    <div class="stat-top-container">
+                                        <h1 class="stat-heading">Statistics</h1>
+                                        <select name="" id="">
+                                            <option value="">Last 6 months</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="sales-graph">Sales</div>
+                            </div>
+                            
+                            <div class="refer-table">Table</div>
+                        </div>
+                        <div class="details-right-container">
+                            <div class="profile-details">
+                                <div class="profile-main-details">
+                                    <div class="details-profile-pic-container">
+                                        <img src="./images/profile.png" alt="">
+                                        <img class="edit-icon" src="./images/edit.svg" alt="edit-icon">
+                                    </div>
+                                    <h3 class="profile-name">Nick Herasimenka</h3>
+                                    <p class="profile-country">United States</p>
+                                    <div class="social-media-icons">
+                                        <img class="media-icon" src="./images/twitter.png" alt="twitter">
+                                        <img class="media-icon" src="./images/facebook.png" alt="facebook">
+                                        <img class="media-icon" src="./images/linkedin.png" alt="linkedin">
+                                        <img class="media-icon" src="./images/whatsapp.png" alt="whatsapp">
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <div class="users-top-container">
+                                        <h1 class="user-heading">Our Users</h1>
+                                        <img src="./images/options.svg" alt="">
+                                    </div>
+
+                                    <div class="users-container">
+                                        <div class="each-user">
+                                            <img class="user-pic" src="./images/profile-pic.png" alt="">
+                                            <div>
+                                                <h4 class="user-name">Drew James</h4>
+                                                <p class="user-country">United States</p>
+                                            </div>
+                                        </div>
+                                        <p class="user-number">Mobile: 8715674877</p>
+                                    </div>
+
+                                    <div class="users-container">
+                                        <div class="each-user">
+                                            <img class="user-pic" src="./images/profile-pic.png" alt="">
+                                            <div>
+                                                <h4 class="user-name">Drew James</h4>
+                                                <p class="user-country">United States</p>
+                                            </div>
+                                        </div>
+                                        <p class="user-number">Mobile: 8715674877</p>
+                                    </div>
+
+                                    <div class="users-container">
+                                        <div class="each-user">
+                                            <img class="user-pic" src="./images/profile-pic.png" alt="">
+                                            <div>
+                                                <h4 class="user-name">Drew James</h4>
+                                                <p class="user-country">United States</p>
+                                            </div>
+                                        </div>
+                                        <p class="user-number">Mobile: 8715674877</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-videos"></div>
+                        </div>
+
+                        
+                    </div>
+                    <div class="mobile-view-product-videos">Product videos</div>
+                </div> -->
+                
+                <div class="container-fluid m-0 p-0">
+                    <div class="d-flex justify-content-between mb-4">
+                        <h4>Overview</h4>
+                        <button class="btn btn-sm btn-primary">Add Funds <img class="plus-icon" src="./images/plus.svg" alt=""></button>
+                    </div>
+
+                    <div class="row container-fluid m-0 p-0">
+                        <div class="col-md-8 row p-0 m-0 d-flex justify-content-between">
+                            <div class="col-md-6 m-0 p-0 pe-2 h-auto">
+                                <div class="card p-2 m-0">
+                                    <div class="card-body bg-body ">
+                                        <div class="title d-flex justify-content-between">
+                                            <h6 class="card-title my-2">Statistics</h6>
+                                            <select name="" id="" class="form-control w-auto btn-sm">
+                                                <option value="">Last 6 months</option>
+                                            </select>  
+                                        </div>
+                                        
+                                        <div class="chartBox1 ">
+                                            <canvas id="myDoughnut"></canvas>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            
+                            <div class="col-md-6 m-0 p-0 ps-2 h-auto">
+                                <div class="card p-2 m-0">
+                                    <div class="card-body bg-body ">
+                                        <div class="title d-flex justify-content-between">
+                                            <h6 class="card-title my-2">Sales Distribution</h6>
+ 
+                                        </div>
+                                        
+                                        <div class="chartBox1 ">
+                                            <canvas id="myDoughnut2"></canvas>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+
+                            <div class="col-md-12 my-4 p-0 ">
+                                <div class="card p-2 m-0 w-100">
+                                    <div class="card-body bg-body ">
+                                        <div class="title d-flex justify-content-between">
+                                            <h6 class="card-title my-2">Referer</h6>
+ 
+                                        </div>
+                                        
+                                        <div class="tables">
+                                            <table class="table table-responsive">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">Location</th>
+                                                    <th scope="col">Views</th>
+                                                    <th scope="col">Sales</th>
+                                                    <th scope="col">Conversion</th>
+                                                    <th scope="col">Total</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th scope="row">google.com</th>
+                                                    <td>3746</td>
+                                                    <td>752</td>
+                                                    <td>43%</td>
+                                                    <td>$19,291</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">google.com</th>
+                                                    <td>3746</td>
+                                                    <td>752</td>
+                                                    <td>43%</td>
+                                                    <td>$19,291</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">google.com</th>
+                                                    <td>3746</td>
+                                                    <td>752</td>
+                                                    <td>43%</td>
+                                                    <td>$19,291</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">google.com</th>
+                                                    <td>3746</td>
+                                                    <td>752</td>
+                                                    <td>43%</td>
+                                                    <td>$19,291</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">google.com</th>
+                                                    <td>3746</td>
+                                                    <td>752</td>
+                                                    <td>43%</td>
+                                                    <td>$19,291</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">google.com</th>
+                                                    <td>3746</td>
+                                                    <td>752</td>
+                                                    <td>43%</td>
+                                                    <td>$19,291</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">google.com</th>
+                                                    <td>3746</td>
+                                                    <td>752</td>
+                                                    <td>43%</td>
+                                                    <td>$19,291</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">google.com</th>
+                                                    <td>3746</td>
+                                                    <td>752</td>
+                                                    <td>43%</td>
+                                                    <td>$19,291</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              
+                                              <a href="#" class="text-decoration-none">Show more >></a>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-md-4 mh-100 pe-0">
+                            <div class="profile-details">
+                                <div class="profile-main-details">
+                                    <div class="details-profile-pic-container">
+                                        <img src="./images/profile.png" alt="" height="80px" width="80px">
+                                        <img class="edit-icon" src="./images/edit.svg" alt="edit-icon">
+                                    </div>
+                                    <h4 class="profile-name mt-3">Nick Herasimenka</h4>
+                                    <p class="profile-country mb-1">United States</p>
+                                    <div class="social-media-icons">
+                                        <img class="media-icon" src="./images/twitter.png" alt="twitter">
+                                        <img class="media-icon" src="./images/facebook.png" alt="facebook">
+                                        <img class="media-icon" src="./images/linkedin.png" alt="linkedin">
+                                        <img class="media-icon" src="./images/whatsapp.png" alt="whatsapp">
+                                    </div>
+                                    
+                                </div>
+
+                                <div>
+                                    <div class="users-top-container mb-2">
+                                        <h3 class="user-heading mb-3">Our Users</h3>
+                                        <img src="./images/options.svg" alt="" >
+                                    </div>
+
+                                    <div class="users-container ">
+                                        <div class="d-flex w-100 ">
+                                            <img class="user-pic" src="./images/profile-pic.png" alt="" height="50px" width="50px">
+                                            <div class="d-flex flex-column w-100">
+                                                <h4 class="fs-6">Drew James</h4>
+                                                <div class="d-flex justify-content-between user-details fw-light">
+                                                    <p >United States</p>
+                                                    <p >Mobile: 8715674877</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="users-container ">
+                                        <div class="d-flex w-100 ">
+                                            <img class="user-pic" src="./images/profile-pic.png" alt="" height="50px" width="50px">
+                                            <div class="d-flex flex-column w-100">
+                                                <h4 class="fs-6">Drew James</h4>
+                                                <div class="d-flex justify-content-between user-details fw-light">
+                                                    <p >United States</p>
+                                                    <p >Mobile: 8715674877</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="users-container ">
+                                        <div class="d-flex w-100 ">
+                                            <img class="user-pic" src="./images/profile-pic.png" alt="" height="50px" width="50px">
+                                            <div class="d-flex flex-column w-100">
+                                                <h4 class="fs-6">Drew James</h4>
+                                                <div class="d-flex justify-content-between user-details fw-light">
+                                                    <p >United States</p>
+                                                    <p >Mobile: 8715674877</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                               
+                                </div>
+                                <div class="mt-2">
+                                    <div class="card p-2 m-0">
+                                    <div class="card-body bg-body ">
+                                        <div class="title d-flex justify-content-between">
+                                            <h3 class="user-heading mb-3">Product Video</h3>
+                                            <img src="./images/options.svg" alt="" > 
+                                        </div>
+                                        <div class="video">
+                                            <img src="./images/thumbnail@2x.png" alt="" height="220px" width="100%">
+                                            <div class="play-button">
+                                                <img src="./images/play-icon@2x.png" class="" alt="" height="25px" width="25px">
+                                            </div>
+                                            
+                                        </div>
+                                      
+                                    </div>
+                                </div>  
+                                
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
